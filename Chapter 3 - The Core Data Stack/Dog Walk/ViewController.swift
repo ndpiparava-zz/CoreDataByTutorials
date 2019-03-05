@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         formatter.timeStyle = .medium
         return formatter
     }()
+    
     var managedContext: NSManagedObjectContext!
     var currentDog : Dog?
    
