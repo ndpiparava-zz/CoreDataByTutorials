@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2016 Razeware LLC
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -22,34 +22,30 @@
 
 import Foundation
 import CoreData
-import UIKit
 
-class Note: NSManagedObject {
-  @NSManaged var title: String
-  @NSManaged var body: String
-  @NSManaged var dateCreated: Date!
-  @NSManaged var displayIndex: NSNumber!
- 
-  @NSManaged var attachments: Set<Attachment>?
-  
-  var latestAttachment: Attachment? {
-    
-    guard let attachments = attachments, let startingAttachment = attachments.first else {
-      return nil
-    }
-    
-    return Array(attachments).reduce(startingAttachment) {
-      $0.dateCreated.compare($1.dateCreated)
-        == .orderedAscending ? $0 : $1
-    }
+public final class CamperService {
+
+  // MARK: Properties
+  let managedObjectContext: NSManagedObjectContext
+  let coreDataStack: CoreDataStack
+
+  // MARK: Initializers
+  public init(managedObjectContext: NSManagedObjectContext, coreDataStack: CoreDataStack) {
+    self.managedObjectContext = managedObjectContext
+    self.coreDataStack = coreDataStack
   }
-  
-  var image: UIImage? {
-    return latestAttachment?.image
-  }
-  
-  override func awakeFromInsert() {
-    super.awakeFromInsert()
-    dateCreated = Date()
+}
+
+// MARK: Public
+extension CamperService {
+
+  public func addCamper(_ name: String, phoneNumber: String) -> Camper? {
+    let camper = Camper(context: managedObjectContext)
+    camper.fullName = name
+    camper.phoneNumber = phoneNumber
+    
+    coreDataStack.saveContext(managedObjectContext)
+    
+    return camper
   }
 }

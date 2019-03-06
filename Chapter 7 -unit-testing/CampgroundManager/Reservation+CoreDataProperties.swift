@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2016 Razeware LLC
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -22,34 +22,16 @@
 
 import Foundation
 import CoreData
-import UIKit
 
-class Note: NSManagedObject {
-  @NSManaged var title: String
-  @NSManaged var body: String
-  @NSManaged var dateCreated: Date!
-  @NSManaged var displayIndex: NSNumber!
- 
-  @NSManaged var attachments: Set<Attachment>?
-  
-  var latestAttachment: Attachment? {
-    
-    guard let attachments = attachments, let startingAttachment = attachments.first else {
-      return nil
-    }
-    
-    return Array(attachments).reduce(startingAttachment) {
-      $0.dateCreated.compare($1.dateCreated)
-        == .orderedAscending ? $0 : $1
-    }
+public extension Reservation {
+  @nonobjc class func fetchRequest() -> NSFetchRequest<Reservation> {
+    return NSFetchRequest<Reservation>(entityName: "Reservation")
   }
+
+  @NSManaged var dateFrom: Date?
+  @NSManaged var dateTo: Date?
+  @NSManaged var status: String?
+  @NSManaged var camper: Camper?
+  @NSManaged var campSite: CampSite?
   
-  var image: UIImage? {
-    return latestAttachment?.image
-  }
-  
-  override func awakeFromInsert() {
-    super.awakeFromInsert()
-    dateCreated = Date()
-  }
 }
