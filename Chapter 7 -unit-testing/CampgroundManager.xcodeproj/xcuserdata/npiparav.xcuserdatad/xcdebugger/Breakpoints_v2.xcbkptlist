@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CampgroundManagerTests/ReservationServiceTests.swift"
+            timestampString = "573630441.742066"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "testReserveCampSiteNegativeNumverOfDays()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CampgroundManagerTests.ReservationServiceTests.testReserveCampSiteNegativeNumverOfDays() -&gt; ()"
+                  moduleName = "CampgroundManagerTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/npiparav/Desktop/Swift/Core%20Data/Practice/CoreDataByTutorials/Chapter%207%20-unit-testing/CampgroundManagerTests/ReservationServiceTests.swift"
+                  timestampString = "573630445.127218"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "1786">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #3 : @autoclosure () throws -&gt; Swift.Optional&lt;Any&gt; in CampgroundManagerTests.ReservationServiceTests.testReserveCampSiteNegativeNumverOfDays() -&gt; ()"
+                  moduleName = "CampgroundManagerTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/npiparav/Desktop/Swift/Core%20Data/Practice/CoreDataByTutorials/Chapter%207%20-unit-testing/CampgroundManagerTests/ReservationServiceTests.swift"
+                  timestampString = "573630445.131274"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #4 : @autoclosure () -&gt; Swift.String in CampgroundManagerTests.ReservationServiceTests.testReserveCampSiteNegativeNumverOfDays() -&gt; ()"
+                  moduleName = "CampgroundManagerTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/npiparav/Desktop/Swift/Core%20Data/Practice/CoreDataByTutorials/Chapter%207%20-unit-testing/CampgroundManagerTests/ReservationServiceTests.swift"
+                  timestampString = "573630445.133369"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

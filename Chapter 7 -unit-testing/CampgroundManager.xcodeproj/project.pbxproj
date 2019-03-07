@@ -24,6 +24,10 @@
 		93CF1D7E19A17A42003FBB14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93CF1D7D19A17A42003FBB14 /* Images.xcassets */; };
 		93CF1D9D19A23F01003FBB14 /* CampSiteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CF1D9C19A23F01003FBB14 /* CampSiteService.swift */; };
 		93DC421B19A6D4E900D015A8 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC421A19A6D4E900D015A8 /* CoreDataStack.swift */; };
+		C1055B99223007A900F41F2D /* TestCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1055B98223007A900F41F2D /* TestCoreDataStack.swift */; };
+		C16741DF2230CED700FC13AD /* CamperServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16741DE2230CED700FC13AD /* CamperServiceTests.swift */; };
+		C16741E12230D5C400FC13AD /* CampSiteServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16741E02230D5C400FC13AD /* CampSiteServiceTests.swift */; };
+		C16741E32230DD8A00FC13AD /* ReservationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16741E22230DD8A00FC13AD /* ReservationServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		93CF1D9419A17F25003FBB14 /* CampgroundManager-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CampgroundManager-Bridging-Header.h"; sourceTree = "<group>"; };
 		93CF1D9C19A23F01003FBB14 /* CampSiteService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampSiteService.swift; sourceTree = "<group>"; };
 		93DC421A19A6D4E900D015A8 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		C1055B98223007A900F41F2D /* TestCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoreDataStack.swift; sourceTree = "<group>"; };
+		C16741DE2230CED700FC13AD /* CamperServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamperServiceTests.swift; sourceTree = "<group>"; };
+		C16741E02230D5C400FC13AD /* CampSiteServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampSiteServiceTests.swift; sourceTree = "<group>"; };
+		C16741E22230DD8A00FC13AD /* ReservationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,10 @@
 		938C96F019AAE9520009D5EB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C1055B98223007A900F41F2D /* TestCoreDataStack.swift */,
+				C16741DE2230CED700FC13AD /* CamperServiceTests.swift */,
+				C16741E02230D5C400FC13AD /* CampSiteServiceTests.swift */,
+				C16741E22230DD8A00FC13AD /* ReservationServiceTests.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -227,7 +239,7 @@
 					};
 					93CF1D8219A17A42003FBB14 = {
 						CreatedOnToolsVersion = 6.0;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0940;
 						TestTargetID = 93CF1D6B19A17A42003FBB14;
 					};
 				};
@@ -297,6 +309,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C16741E12230D5C400FC13AD /* CampSiteServiceTests.swift in Sources */,
+				C1055B99223007A900F41F2D /* TestCoreDataStack.swift in Sources */,
+				C16741E32230DD8A00FC13AD /* ReservationServiceTests.swift in Sources */,
+				C16741DF2230CED700FC13AD /* CamperServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
